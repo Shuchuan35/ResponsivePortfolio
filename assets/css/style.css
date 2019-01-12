@@ -1,0 +1,259 @@
+body {
+    background-image: url("white-waves.png");
+}
+
+header {
+    background-color: #ffffff;
+    overflow: auto;
+    border-bottom: 2px solid #cccccc;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1,
+h2 {
+    font-family: Georgia, Times, 'Times New Roman', Times, serif;
+}
+
+nav, 
+p {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.group {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;  
+    box-sizing: border-box;
+    margin: 30px auto;
+    width: 960px;
+    overflow: auto;
+    
+}
+
+.logo {
+    background-color: #4aaaa5;
+    width: 280px;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    float: left;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav li {
+   display: inline-block;
+   padding: 17px;
+   font-size: 18px;
+}
+
+.box {
+    margin: 20px;
+}
+
+.box-top {
+    border-bottom: 2px solid #dddddd;
+    margin: 20px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+#profile-pic {
+    height: 240px;
+    width: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+p {
+    color: #777777;
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #4aaaa5;
+  }
+
+footer {
+    background-color: #666666;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    border-top: 5px solid #4aaaa5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+#name,
+#email,
+#message {
+    width: 900px;
+}
+
+#name,
+#email {
+    height: 30px;
+}
+
+#message {
+    height: 120px;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.pic {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    
+}
+
+.pic-hangman {
+    float: left;
+}
+
+.hangman,
+.rpg,
+.game,
+.widget,
+.rps {
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.hangman {
+    top: 180px;
+}
+.rpg {
+    top: 180px;
+    left: 320px;
+}
+.game {
+    top: 455px;
+    
+}
+.widget {
+    top: 455px;
+    left: 320px;
+}
+.rps {
+    top: 725px;
+}
+
+@media screen and (max-width: 980px) {
+    .group {
+        width: 95%;
+    }
+
+    .container {
+        width: 95%;
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .group {
+        width: 95%;
+    }
+
+    .container {
+        width: 95%;
+        height: 95%;
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .group {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        float: none;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .nav {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 95%;
+        height: 95%;
+    }
+
+    #profile-pic {
+        
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    
+}
