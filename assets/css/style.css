@@ -234,6 +234,40 @@ button:active {
         
     }
 
+    .pic {
+        width: 44%;
+        height: auto;
+        
+    }
+    .hangman,
+    .rpg,
+    .game,
+    .widget,
+    .rps {
+        width: 44%;
+        
+    }
+
+    .hangman {
+        top: 18%;
+    }
+
+    .rpg {
+        top: 18%;
+        left: 47%;
+    }
+    .game {
+        top: 50%;
+        
+    }
+    .widget {
+        top: 50%;
+        left: 48%;
+    }
+    .rps {
+        top: 85%;
+    }
+
 
 }
 
