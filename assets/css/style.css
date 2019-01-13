@@ -30,16 +30,6 @@ p {
     width: 960px;
 }
 
-.container {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;  
-    box-sizing: border-box;
-    margin: 30px auto;
-    width: 960px;
-    overflow: auto;
-    
-}
-
 .logo {
     background-color: #4aaaa5;
     width: 280px;
@@ -57,25 +47,38 @@ p {
 
 .nav li {
    display: inline-block;
-   padding: 17px;
+   padding: 20px 5px 0 5px;
    font-size: 18px;
 }
 
-.box {
-    margin: 20px;
+.container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;  
+    box-sizing: border-box;
+    margin: 30px auto;
+    width: 960px;
+    overflow: auto;
+    
 }
 
 .box-top {
-    border-bottom: 2px solid #dddddd;
+    
     margin: 20px;
 }
 
 h2 {
+    border-bottom: 2px solid #dddddd;
     color: #4aaaa5;
-    font-size: 20px;
+    font-size: 22px;
     text-align: left;
     font-weight: 900;
     padding: 20px 0;
+    
+}
+.box {
+    margin: 20px;
+    width: 95%;
+    position: relative;
 }
 
 #profile-pic {
@@ -88,7 +91,7 @@ h2 {
 
 p {
     color: #777777;
-    margin: 20px 0;
+    margin-bottom: 20px;
     line-height: 30px;
 }
 
@@ -120,7 +123,7 @@ h3 {
 #name,
 #email,
 #message {
-    width: 900px;
+    width: 920px;
 }
 
 #name,
@@ -149,17 +152,18 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
+/*
 .image {
     height: 100%;
     width: 100%;
     position: relative;
 }
-
+*/
 .pic {
     height: 250px;
     width: 300px;
-    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     
 }
 
@@ -173,13 +177,13 @@ button:active {
 .widget,
 .rps {
     position: absolute;
-    width: 280px;
+    width: 300px;
     height: 40px;
     background-color: #4aaaa5;
     color: #ffffff;
-    margin: 10px;
+    
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
 }
 .hangman {
     top: 180px;
@@ -194,7 +198,7 @@ button:active {
 }
 .widget {
     top: 455px;
-    left: 320px;
+    left: 325px;
 }
 .rps {
     top: 725px;
@@ -203,57 +207,173 @@ button:active {
 @media screen and (max-width: 980px) {
     .group {
         width: 95%;
+        margin: 0 auto 0 20px;
     }
 
     .container {
-        width: 95%;
-        height: 95%;
+        width: 80%;
+        height: auto;
+        margin: 20px auto auto 20px;
     }
+
+    .nav li {
+        display: inline-block;
+        padding: 20px 5px 0 5px;
+        font-size: 18px;
+     }
+
+    #name,
+    #email,
+    #message {
+        width: 94%;
+    }
+
+    .pic {
+        width: 40%;
+        height: auto;
+        
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
     .group {
         width: 95%;
+        margin: 0 auto;
+    }
+
+    
+    .nav li {
+        display: inline-block;
+        padding: 20px 5px 0 5px;
+        font-size: 18px;
     }
 
     .container {
         width: 95%;
         height: 95%;
+        
     }
 
     #profile-pic {
         width: 50%;
         height: auto;
     }
+
+    #name,
+    #email,
+    #message {
+        width: 96%;
+    }
+
+
+    .pic {
+        width: 44%;
+        height: auto;
+        
+    }
+    .hangman,
+    .rpg,
+    .game,
+    .widget,
+    .rps {
+        width: 44%;
+        
+    }
+
+    .hangman {
+        top: 18%;
+    }
+
+    .rpg {
+        top: 18%;
+        left: 47%;
+    }
+    .game {
+        top: 50%;
+        
+    }
+    .widget {
+        top: 50%;
+        left: 48%;
+    }
+    .rps {
+        top: 85%;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .group {
         width: 100%;
+        margin: 0 auto;
     }
-
     .logo {
         width: 100%;
         float: none;
         padding: 20px 0;
         margin: 0;
     }
-
     .nav {
         text-align: center;
         margin: 0 auto;
     }
-
+    .nav li {
+        display: inline-block;
+        padding: 18px;
+        font-size: 18px;
+     }
     .container {
         width: 95%;
         height: 95%;
+    
     }
-
     #profile-pic {
-        
         width: 100%;
         height: auto;
         float: none;
     }
+
+    #name,
+    #email,
+    #message {
+        width: 96%;
+    }
+ 
+    .pic {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .hangman,
+    .rpg,
+    .game,
+    .widget,
+    .rps {
+        width: 100%;
+    }
+
+    .hangman {
+        top: 13%;
+    }
+
+    .rpg {
+        top: 33%;
+        left: 0;
+    }
+    .game {
+        top: 53%;
+    
+    }
+    .widget {
+        top: 73%;
+        left: 0;
+    }
+    .rps {
+        top: 93%;
+    }
+
+
     
 }
