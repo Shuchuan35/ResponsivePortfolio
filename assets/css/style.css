@@ -76,7 +76,7 @@ h2 {
     
 }
 .box {
-    margin: 20px;
+    margin: 20px auto;
     width: 95%;
     position: relative;
 }
@@ -213,7 +213,7 @@ button:active {
     .container {
         width: 80%;
         height: auto;
-        margin: 20px auto auto 20px;
+        margin: 20px auto auto;
     }
 
     .nav li {
