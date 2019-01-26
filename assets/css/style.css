@@ -104,6 +104,14 @@ a:hover {
     color: #4aaaa5;
   }
 
+div > a {
+    color: #ffffff;
+}
+
+div > a:hover {
+    color: black;
+}
+
 footer {
     background-color: #666666;
     padding: 10px;
@@ -153,9 +161,9 @@ button:active {
   transform: translateY(4px);
 }
 /*
-.image {
-    height: 100%;
-    width: 100%;
+.image-item {
+    height: 300px;
+    width: 100px;
     position: relative;
 }
 */
@@ -164,7 +172,6 @@ button:active {
     width: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
-    
 }
 
 .pic-hangman {
@@ -204,10 +211,11 @@ button:active {
     top: 725px;
 }
 
+
 @media screen and (max-width: 980px) {
     .group {
         width: 95%;
-        margin: 0 auto 0 20px;
+        margin: 0 auto;
     }
 
     .container {
@@ -218,7 +226,7 @@ button:active {
 
     .nav li {
         display: inline-block;
-        padding: 20px 5px 0 5px;
+        padding: 20px 5px 0;
         font-size: 18px;
      }
 
@@ -280,7 +288,7 @@ button:active {
     
     .nav li {
         display: inline-block;
-        padding: 20px 5px 0 5px;
+        padding: 20px 5px 0;
         font-size: 18px;
     }
 
@@ -335,6 +343,7 @@ button:active {
     .rps {
         top: 85%;
     }
+    
 }
 
 @media screen and (max-width: 640px) {
@@ -407,7 +416,4 @@ button:active {
     .rps {
         top: 93%;
     }
-
-
-    
 }
