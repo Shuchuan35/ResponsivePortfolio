@@ -131,18 +131,18 @@ h3 {
 #name,
 #email,
 #message {
-    width: 920px;
+    width: 910px;
 }
 
 #name,
 #email {
     height: 30px;
 }
-
+/*
 #message {
     height: 120px;
 }
-
+*/
 button {
     background-color: #4aaaa5;
     color: #ffffff;
