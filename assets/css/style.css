@@ -62,10 +62,14 @@ p {
 }
 
 .box-top {
-    
     margin: 20px;
 }
-
+#contact {
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 0;
+    line-height: 18px;
+}
 h2 {
     border-bottom: 2px solid #dddddd;
     color: #4aaaa5;
