@@ -1,66 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Portfolio</title>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_ISBvizalqrfttKA25yz7y");
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-  <body>
+<body>
 
-    <!-- Header -->
+  <!-- Header -->
 
-    <header>
-      <div class="group">
-          <h1 class="logo">Jennifer Hou</h1>
+  <header>
+    <div class="group">
+      <h1 class="logo">Jennifer Hou</h1>
 
-          <nav class="nav">
-            <ul>
-              <li><a href="index.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- Contact -->
+      <div class="box-top">
+        <h2>Contact</h2>
+        <p id='contact'>(678)777-4928 * hou.jennifer35@gmail.com</p>
       </div>
 
-    </header>
+      <div class="box">
+        <form>
+          <h3>Name</h3>
+          <input id="name" type="text" placeholder=" Johnson Smith">
 
-    <main>
-      <div class="container">
-
-        <!-- Contact -->
-        <div class="box-top">
-          <h2>Contact</h2>
-          <p id='contact'>(678)777-4928 * hou.jennifer35@gmail.com</p>
-        </div>
-
-        <div class="box">
-          <h3>Name</h3> 
-          <input id="name" type="text" placeholder=" Jennifer Hou">
-          
           <h3>Email</h3>
-          <input id="email" type="text" placeholder=" hou.jennifer35@gmail.com">
-  
+          <input id="email" type="text" placeholder=" example@email.com">
+
+          <h3>Subject</h3>
+          <input id="subject" type="text">
+
           <h3>Message</h3>
           <textarea id="message" cols="30" rows="10"></textarea>
-         
-          <button>Submit</button>
-        </div>  
-          
+          <button id="submit">Submit</button>
+        </form>
+        <!-- <form action="" class="formPad">
+            Name: <br />
+            <input type="text"  id='fromName'  name="name"  placeholder="John Smith" class="formField formPad" /><br />
+            Email: <br />
+            <input type="email" id='fromEmail'  name="email"  placeholder="example@gmail.com" class="formField formPad" /><br />
+            Message <br />
+            <textarea  rows="8"  id='message' name="message" class="formField formPad"></textarea>
+            <br />
+            <input type="submit" name="submit" id="submit" class="submitButton" />
+          </form> -->
       </div>
 
-    </main>
+    </div>
 
-    <!-- Footer -->
+  </main>
 
-    <footer>
+  <!-- Footer -->
 
-      <small>Copyright&copy; </small>
+  <footer>
 
-    </footer>
+    <small>Copyright&copy; </small>
 
-  </body>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

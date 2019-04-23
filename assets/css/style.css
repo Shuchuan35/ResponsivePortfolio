@@ -134,12 +134,14 @@ h3 {
 
 #name,
 #email,
+#subject,
 #message {
     width: 910px;
 }
 
 #name,
-#email {
+#email,
+#subject {
     height: 30px;
 }
 /*

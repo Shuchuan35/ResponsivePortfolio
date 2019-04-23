@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Portfolio</title>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_ISBvizalqrfttKA25yz7y");
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-  <body>
+<body>
 
-    <!-- Header -->
+  <!-- Header -->
 
-    <header>
-      <div class="group">
-          <h1 class="logo">Jennifer Hou</h1>
+  <header>
+    <div class="group">
+      <h1 class="logo">Jennifer Hou</h1>
 
-          <nav class="nav">
-            <ul>
-              <li><a href="index.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- About Me -->
+      <div class="box-top">
+        <h2>About Me</h2>
       </div>
-      
-    </header>
 
-    <main>
-      <div class="container">
-          
-        <!-- About Me -->
-        <div class="box-top">
-          <h2>About Me</h2>
-        </div>
-       
-        <div class="box">
-          <img id="profile-pic" src="assets/images/IMG.JPG" alt="About Me">
-          <p>My name is Jennifer Hou.  I am an experienced Java developer who has worked on various projects.  I recently graduated from the Georgia Tech Coding boot camp where I developed 5 full stack web applications from mockup to deployment, two of which used React front-end.</p>
-          <p>Through the boot camp, I was able to further strengthen my developer skills by creating the applications from design to completion with JavaScript, HTML5, CSS3, jQuery.  Create, build and consume REST APIs. I enjoy learning new technology like Node.js and applying them to my projects to solidify my technical skills.</p>
-          <p>My goal is to work for a company where I can continue to learn and grow and be able to maintain up-to-date knowledge on rapidly changing technology.</p>
-        </div>  
-          
+      <div class="box">
+        <img id="profile-pic" src="assets/images/IMG.JPG" alt="About Me">
+        <p>Jennifer Hou is an experienced Java developer who gained the experience by working with 
+          various project teams. Successfully graduated from the Georgia Tech Coding boot camp where 5 full stack web 
+          applications were developed from mockup to deployment.  She enjoy learning new technology and challenge herself 
+          with the new skills.</p>
+        <p>Her goal is to work for a company where she can continue to learn and grow and maintain up-to-date
+          knowledge on rapidly changing technology.</p>
       </div>
-    
-    </main>
 
-    <!-- Footer -->
+    </div>
 
-    <footer>
+  </main>
 
-      <small>Copyright&copy; </small>
+  <!-- Footer -->
 
-    </footer>
+  <footer>
 
-  </body>
+    <small>Copyright&copy; </small>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
